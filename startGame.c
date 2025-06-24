@@ -1,9 +1,14 @@
 /*****************************************************************************
-* 関数名：startGame
+* 関数名(function name)：startGame
 *
 * 内容　：サーバと接続する。どちらかのスコアが14枚、またはお互いのスコアが12枚に
 			なるまで、盤面情報と点数を送受信する。その後、結果を表示する。ユーザ
 			がゲームの終了を選択しない間、上記の処理を繰り返す。
+	
+	(explanation) connecting with server. The board information and scores are 
+	sent and received until either side's score reaches 14 cards or each other's
+	score reaches 12 cards. The results are then displayed. The above process 
+	is repeated while the user - does not choose to end the game.
 *			
 * 引数　：なし
 *

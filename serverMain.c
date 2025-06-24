@@ -1,8 +1,14 @@
 /*********************************************************************
-* 【神経衰弱】メニュー画面
+* 【神経衰弱】(function name)メニュー画面/ menu 
 *
 * 内容：１～３の整数を受け取り、ゲーム開始、ファイル参照、ゲーム終了を処理
 *		ソケット通信は1.ゲーム開始を選択した後に、接続待機状態になる
+*	(explanation) The menu function takes an integer from 1 to 3 and 
+				  handles the following options: Start Game, View File, 
+				  and Exit Game.
+
+				  (ex.) When the user selects option 1 (Start Game), the 
+				  system enters a waiting state for socket connection.
 * 
 * 作成日:2024/８/１３* 作成者:秋山 みう
 *
@@ -94,7 +100,12 @@ int main( void )
 * 内容	：作成されたResult.csvを開き最初に対戦時間を表示、参照したいゲームナンバーを
 * 		　選択してプレイヤー名・スコア・勝者を表示する
 * 		 続けて参照を続けるか、メニュー画面にもどるかを選択する
-*
+*	(explanation) File reference function: Opens the generated Result.csv
+	 file and first displays the match time. Then, prompts the user to select 
+	 the game number they want to view, and displays the player names, scores,
+	  and winner for that game.
+	 The user can then choose whether to continue browsing or return to the main menu.
+*      
 * 引数　：なし
 * 戻り値：なし
 *
